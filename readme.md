@@ -1,0 +1,1 @@
+Prosty projekt, który ma na celu zbadaæ efektywnoœæ kilku algorytmów rekomendacji filmów na podstawie bazy ML100k
