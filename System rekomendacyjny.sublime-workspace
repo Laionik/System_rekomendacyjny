@@ -1,0 +1,739 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"movies",
+				"moviesList	statement"
+			],
+			[
+				"data",
+				"data_element"
+			],
+			[
+				"mo",
+				"moviesList"
+			],
+			[
+				"wri",
+				"write	function"
+			],
+			[
+				"move",
+				"moviesList	statement"
+			],
+			[
+				"item",
+				"item_average	statement"
+			],
+			[
+				"movie",
+				"moviesCategory	statement"
+			],
+			[
+				"rando",
+				"randomPrecision	statement"
+			],
+			[
+				"rand",
+				"randint	statement"
+			],
+			[
+				"read",
+				"readlines	function"
+			],
+			[
+				"conte",
+				"display.contentHeight	display"
+			],
+			[
+				"cont",
+				"display.contentWidth	display"
+			],
+			[
+				"newImage",
+				"display.newImageRect()	display"
+			],
+			[
+				"fun",
+				"function	function"
+			],
+			[
+				"reverse",
+				"reverseAlpha"
+			],
+			[
+				"conten",
+				"display.contentWidth	display"
+			],
+			[
+				"text",
+				"newText"
+			],
+			[
+				"her",
+				"heroes"
+			],
+			[
+				"remove",
+				"removeSelf"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"anc",
+				"anchorY"
+			],
+			[
+				"scenegro",
+				"sceneGroup:insert"
+			],
+			[
+				"scenegr",
+				"sceneGroup:insert"
+			],
+			[
+				"menuher",
+				"menuHeroGroup:insert"
+			],
+			[
+				"anch",
+				"anchorX"
+			],
+			[
+				"ancho",
+				"anchorY"
+			],
+			[
+				"image",
+				"imageMoney"
+			],
+			[
+				"mainmen",
+				"mainMenuBar"
+			],
+			[
+				"men",
+				"menuElements"
+			],
+			[
+				"al",
+				"align	TextField"
+			],
+			[
+				"nubme",
+				"numbersText"
+			],
+			[
+				"number",
+				"numbersText"
+			],
+			[
+				"widg",
+				"widget.newButton()	widget"
+			],
+			[
+				"anchor",
+				"anchorX"
+			],
+			[
+				"compo",
+				"composer"
+			],
+			[
+				"load",
+				"loadingText"
+			],
+			[
+				"inde",
+				"indexString"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "DB/generate_database.py",
+			"settings":
+			{
+				"buffer_size": 2378,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "random_average.py",
+			"settings":
+			{
+				"buffer_size": 3380,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Rozpoczynam sprawdzanie danych (cała baza). Proszę czekać...\n-----Dla 100 rekomendacji\nLosowy system rekomendacji: 5.40\nŚrednia ocena: 16.11\nCzas sprawdzania: 8s\nRozpoczynam sprawdzanie danych (cała baza). Proszę czekać...\n-----Dla 200 rekomendacji\nLosowy system rekomendacji: 4.68\nŚrednia ocena: 12.71\nCzas sprawdzania: 16s\nRozpoczynam sprawdzanie danych (cała baza). Proszę czekać...\n",
+			"settings":
+			{
+				"buffer_size": 386,
+				"line_ending": "Windows",
+				"name": "*REPL* [python]",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "Rozpoczynam sprawdzanie danych (cała baza). Proszę czekać...\nTraceback (most recent call last):\n  File \"random_average.py\", line 100, in <module>\n    main(i)\n  File \"random_average.py\", line 62, in main\n    randomPrecision = (randomPrecision + randomRecommendation(recommendationNumber, randomList, user)) / 2\n  File \"random_average.py\", line 26, in randomRecommendation\n    randomPrec, randomAuroc = checkRecommendation(rndList, user)\n  File \"random_average.py\", line 21, in checkRecommendation\n    precision, auroc = calculateStatistic(correctSuggestion, recommendationNumber)\nNameError: name 'recommendationNumber' is not defined\n\n***Repl Closed***\n",
+			"settings":
+			{
+				"buffer_size": 652,
+				"line_ending": "Windows",
+				"name": "*REPL* [python]",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Love2D"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: File"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: Project"
+				]
+			],
+			[
+				"Packages/Lua Love/LuaLove.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Channel"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: pack",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"lua",
+				"Build With: Lua"
+			],
+			[
+				"package control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR"
+	],
+	"file_history":
+	[
+		"/C/Users/lukas/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/lukas/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/lukas/Google Drive/Studia/Systemy rekomendacyjne/SR/DB/movies1",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/u.genre",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies6",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies5",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies7",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies8",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies9",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies10",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies11",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies12",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies13",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies14",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies15",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies4",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies16",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies17",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies18",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies0",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies1",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies2",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/movies3",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/25_learn",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/u.item",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/u.info",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/u.data",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/u.user",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/generate_database.py",
+		"/C/Users/lukas/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/lukas/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/desktop.ini",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/main.py",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/System rekomendacyjny.sublime-project",
+		"/C/Users/lukas/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/C/Users/IT4B_DEVELOPER/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/IT4B_DEVELOPER/Documents/PythonProject/SR/System rekomendacyjny.sublime-project",
+		"/C/Users/IT4B_DEVELOPER/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/Default (Windows).sublime-keymap",
+		"/C/Users/IT4B_DEVELOPER/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/IT4B_DEVELOPER/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/IT4B_DEVELOPER/Documents/Corona Projects/StickyNumbers/game.lua",
+		"/C/Users/IT4B_DEVELOPER/Documents/Corona Projects/StickyNumbers/main.lua",
+		"/C/Users/IT4B_DEVELOPER/Documents/Corona Projects/StickyNumbers/settings.lua",
+		"/C/Users/IT4B_DEVELOPER/Documents/Corona Projects/StickyNumbers/menu.lua",
+		"/C/Users/IT4B_DEVELOPER/Documents/Corona Projects/StickyNumbers/build.settings",
+		"/C/Users/IT4B_DEVELOPER/Documents/Corona Projects/StickyNumbers/config.lua",
+		"/C/Users/IT4B_DEVELOPER/Documents/Corona Projects/StickyNumbers/README",
+		"/C/Users/IT4B_DEVELOPER/Documents/Corona Projects/StickyNumbers/level1.lua",
+		"/C/Users/IT4B_DEVELOPER/Documents/Corona Projects/FirstApp/main.lua",
+		"/C/Users/IT4B_DEVELOPER/Documents/Sublime/LuaTest",
+		"/C/Users/IT4B_DEVELOPER/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/IT4B_DEVELOPER/AppData/Roaming/Sublime Text 3/Packages/User/lua.sublime-build",
+		"/C/Users/IT4B_DEVELOPER/Desktop/plugins/SimpleJSON.cs"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"recomendation",
+			"pep",
+			"images//",
+			"buttonsSize",
+			"buttonsHeight",
+			"splash",
+			"background",
+			"splashScreen",
+			"onPlayBtnRelease",
+			"	\n",
+			"	\n	-- create/position logo/title image on upper-half of the screen\n	local titleLogo = display.newImageRect( \"logo.png\", 264, 42 )\n	titleLogo.x = display.contentWidth * 0.5\n	titleLogo.y = 100\n	\n	-- create a widget button (which will loads level1.lua on release)\n	playBtn = widget.newButton{\n		label=\"Play Now\",\n		labelColor = { default={255}, over={128} },\n		default=\"button.png\",\n		over=\"button-over.png\",\n		width=154, height=40,\n		onRelease = onPlayBtnRelease	-- event listener function\n	}\n	playBtn.x = display.contentWidth*0.5\n	playBtn.y = display.contentHeight - 125"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"recommendation",
+			"images/",
+			"itemSize",
+			"buttonsSize",
+			"splashImage",
+			"backgroundImage",
+			"splash"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "DB/generate_database.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1650,
+								1650
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 837.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "random_average.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2505,
+								2505
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"auto_indent": false,
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "python",
+							"repl_id": "0feedaff65ca4e0bacf0a6f6f95d5deb",
+							"repl_restart_args":
+							{
+								"cmd":
+								[
+									"python",
+									"-u",
+									"$file_basename"
+								],
+								"cwd": "$file_path",
+								"encoding": "utf8",
+								"extend_env":
+								{
+									"PYTHONIOENCODING": "utf-8"
+								},
+								"external_id": "python",
+								"syntax": "Packages/Python/Python.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 652,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								652,
+								652
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"auto_indent": false,
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "python",
+							"repl_id": "c39a91bc6be7485a9d3088d242c9df57",
+							"repl_restart_args":
+							{
+								"cmd":
+								[
+									"python",
+									"-u",
+									"$file_basename"
+								],
+								"cwd": "$file_path",
+								"encoding": "utf8",
+								"extend_env":
+								{
+									"PYTHONIOENCODING": "utf-8"
+								},
+								"external_id": "python",
+								"syntax": "Packages/Python/Python.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.218978411407,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 151.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "System rekomendacyjny.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 198.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
