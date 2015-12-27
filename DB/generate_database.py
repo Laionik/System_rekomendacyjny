@@ -37,7 +37,7 @@ def generateAverageList(movies_number):
     fileAvg.close()
 
 
-#tworzenie listy po kategoriach "ucząc się" na ograniczonych zbiorach
+#tworzenie listy po kategoriach
 def generateByCategory():
 	temp = str.split(open("u.item", "r").read(), '\n')
 	moviesCategory = []
@@ -71,7 +71,6 @@ def generateByCategory():
 		moviesDic[lineTemp[1]] = round((moviesDic[lineTemp[1]] + int(lineTemp[2])) / 2, 2)
 
 	for genre in range(0,19):
-		# temp_rank = 0
 		for item in moviesList[genre]:
 			averageList[genre].append("%d %.2f" %(item, moviesDic[str(item)]))
 
@@ -80,8 +79,6 @@ def generateByCategory():
 		for movie in averageList[genre]:
 			fileCategory.write(str(movie) + '\n')
 		fileCategory.close()
-
-
 
 #Program główny
 data = str.split(open("u.data", "r").read(), '\n')
