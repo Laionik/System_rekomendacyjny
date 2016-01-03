@@ -1,29 +1,16 @@
 #sprawdzanie oceny filmu
 def Check_Id(movieID, user):
     for rate in user:
-        print(int(rate[1]))
-        print(int(rate[2]))
-        print()
         if int(rate[1]) == int(movieID) and int(rate[2]) >= 3:
             return True
     return False
 
-#obliczanie wyników
-def Calculate_statistic(correctSuggestion, recommendationNumber):
-    return correctSuggestion / recommendationNumber * 100, 0
-
-#sprawdzanie poprawności rekomendacji
-def Check_recommendation(recommendationNumber, movies_id, user):
+def Calculate_recommendation(recommendationNumber, rate_list, user):
     correctSuggestion = 0
-    for movieID in movies_id:
+    for movieID in rate_list:
         if Check_Id(movieID, user):
             correctSuggestion += 1
-    precision, auroc = Calculate_statistic(correctSuggestion, recommendationNumber)
-    return precision, auroc
-
-def Calculate_recommendation(recommendationNumber, rate_list, user):
-    prec, auroc = Check_recommendation(recommendationNumber, rate_list, user)
-    return prec
+    return correctSuggestion / recommendationNumber * 100
 
 
 #generowanie losowej listy filmów
@@ -53,7 +40,7 @@ def Create_complex_list(number):
         templine = str.split(line, "\t")
         user_test_list[int(templine[0]) - 1].append(templine)
 
-    for line in open("DB\\" + str(number) + '_learn', "r"):
+    for line in open("DB\\" + str(100 - number) + '_learn', "r"):
         templine = str.split(line, "\t")
         user_learn_list[int(templine[0]) - 1].append(templine)
 
@@ -63,8 +50,7 @@ def Create_complex_list(number):
             user_category_list[i].append(0)
 
     return user_learn_list, user_test_list, user_category_list
-    # print("Rozpoczynam sprawdzanie danych za pomocą algorytmu złożonego. Trwa analiza...")
- 
+
 def Get_movies_rank_list():
     movies_rank_list = []
     file_index = 0
@@ -80,7 +66,7 @@ def Get_movies_rank_list():
     
     return movies_rank_list
 
-
+# Pobieranie ulubionej kategorii filmowej
 def Get_categories(movies):
     genres = []
     for i in range(0, len(movies)):
@@ -96,7 +82,7 @@ def User_add_categories(user_id, movie_id, rate_number):
         for x in range(0, 19):
             user_category_list[user_id][x] += temp[x]
 
-# Funckja główna programu
+# Średnia i losowa rekomendacja
 def Main_simple_algorithm(recommendationNumber, random_main_list, average_main_list):
     randomPrecision = 0
     averagePrecision = 0
@@ -110,17 +96,17 @@ def Main_simple_algorithm(recommendationNumber, random_main_list, average_main_l
         averagePrecision = (averagePrecision + Calculate_recommendation(recommendationNumber, averageList, user)) / 2  
 
     time = datetime.datetime.now() - time
-    print("Losowy system rekomendacji: %.2f" % round(randomPrecision, 2))
-    print("Średnia ocena: %.2f" % round(averagePrecision, 2))
+    print("Losowy system rekomendacji: %.2f procent" % round(randomPrecision, 2))
+    print("Średnia ocena: %.2f procent" % round(averagePrecision, 2))
     print("Czas sprawdzania: %.0fs" % time.seconds)
 
-
+# Rekomendacja po ulubionej kategorii filmowej
 def Main_category(user_learn_list, user_test_list):
     print("Rozpoczynam sprawdzanie danych na podstawie ulubionej kategorii filmu. Trwa analiza...")
     time = datetime.datetime.now()
     best_category = []
     recommendation_category = []
-    recommendation_number = 10
+    recommendation_number = 20
     category_precision = 0
     for item in user_learn_list:
         for rate in item:
@@ -133,12 +119,11 @@ def Main_category(user_learn_list, user_test_list):
         recommendation_category.append(list(x[0] for x in movies_rank_list[item][:recommendation_number]))
 
     for user in user_test_list:
-        # tu coś do ogarnięcia bo chyba nie tak jest lista przekazywana
-        category_precision = (category_precision + Calculate_recommendation(recommendation_number, recommendation_category[int(user[0][0]) - 1], user)) / 2
-        break
+        if(len(user) > 0):
+            category_precision = (category_precision + Calculate_recommendation(recommendation_number, recommendation_category[int(user[0][0]) - 1], user)) / 2
 
     time = datetime.datetime.now() - time
-    print("Ulubiona kategoria: %.2f" % round(category_precision, 2))
+    print("Ulubiona kategoria: %.2f procent" % round(category_precision, 2))
     print("Czas sprawdzania: %.0fs" % time.seconds)
     
 
@@ -168,10 +153,11 @@ for line in open("DB\\u.data", "r"):
 # for i in range(10, max_recommendation+1, 20):
 #     Main_simple_algorithm(i, random_main_list, average_main_list)
 
-user_learn_list, user_test_list, user_category_list = Create_complex_list(25)
-Main_category(user_learn_list, user_test_list)
+# user_learn_list, user_test_list, user_category_list = Create_complex_list(25)
+# Main_category(user_learn_list, user_test_list)
 
 # user_learn_list, user_test_list, user_category_list = Create_complex_list(50)
-
+# Main_category(user_learn_list, user_test_list)
 
 # user_learn_list, user_test_list, user_category_list = Create_complex_list(75)
+# Main_category(user_learn_list, user_test_list)
