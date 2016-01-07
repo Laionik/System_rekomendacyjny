@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"to",
+				"temp_to_compare	statement"
+			],
+			[
+				"max",
+				"max_age	statement"
+			],
+			[
+				"reco",
+				"recommendationNumber	param"
+			],
+			[
 				"movies",
 				"moviesList	statement"
 			],
@@ -156,36 +168,26 @@
 	"buffers":
 	[
 		{
-			"file": "DB/generate_database.py",
+			"file": "main.py",
 			"settings":
 			{
-				"buffer_size": 2378,
+				"buffer_size": 7081,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "random_average.py",
+			"file": "DB/u.user",
 			"settings":
 			{
-				"buffer_size": 3380,
-				"line_ending": "Windows"
+				"buffer_size": 22627,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Rozpoczynam sprawdzanie danych (cała baza). Proszę czekać...\n-----Dla 100 rekomendacji\nLosowy system rekomendacji: 5.40\nŚrednia ocena: 16.11\nCzas sprawdzania: 8s\nRozpoczynam sprawdzanie danych (cała baza). Proszę czekać...\n-----Dla 200 rekomendacji\nLosowy system rekomendacji: 4.68\nŚrednia ocena: 12.71\nCzas sprawdzania: 16s\nRozpoczynam sprawdzanie danych (cała baza). Proszę czekać...\n",
+			"contents": "669 ---- 261 ---- 11\n272 ---- 45 ---- 3\n669 ---- 248 ---- 11\n\n***Repl Closed***\n",
 			"settings":
 			{
-				"buffer_size": 386,
-				"line_ending": "Windows",
-				"name": "*REPL* [python]",
-				"scratch": true
-			}
-		},
-		{
-			"contents": "Rozpoczynam sprawdzanie danych (cała baza). Proszę czekać...\nTraceback (most recent call last):\n  File \"random_average.py\", line 100, in <module>\n    main(i)\n  File \"random_average.py\", line 62, in main\n    randomPrecision = (randomPrecision + randomRecommendation(recommendationNumber, randomList, user)) / 2\n  File \"random_average.py\", line 26, in randomRecommendation\n    randomPrec, randomAuroc = checkRecommendation(rndList, user)\n  File \"random_average.py\", line 21, in checkRecommendation\n    precision, auroc = calculateStatistic(correctSuggestion, recommendationNumber)\nNameError: name 'recommendationNumber' is not defined\n\n***Repl Closed***\n",
-			"settings":
-			{
-				"buffer_size": 652,
+				"buffer_size": 80,
 				"line_ending": "Windows",
 				"name": "*REPL* [python]",
 				"read_only": true,
@@ -346,10 +348,25 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Google drive/Studia/Systemy rekomendacyjne/SR"
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB"
 	],
 	"file_history":
 	[
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/generate_database.py",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/u.occupation",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/user_male_45",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/user_male_30",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/user_male_20",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/user_male_10",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/user_female_75",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/user_female_60",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/user_female_45",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/user_female_20",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/user_female_30",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/u.user",
+		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/random_average.py",
+		"/C/Users/lukas/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
 		"/C/Users/lukas/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/lukas/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/lukas/Google Drive/Studia/Systemy rekomendacyjne/SR/DB/movies1",
@@ -377,9 +394,6 @@
 		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/u.item",
 		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/u.info",
 		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/u.data",
-		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/u.user",
-		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/DB/generate_database.py",
-		"/C/Users/lukas/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
 		"/C/Users/lukas/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
 		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/desktop.ini",
 		"/D/Google drive/Studia/Systemy rekomendacyjne/SR/main.py",
@@ -406,7 +420,7 @@
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -420,6 +434,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"write(user)",
+			"generateByCategory",
+			"writeToFIle",
+			"pep",
 			"recomendation",
 			"pep",
 			"images//",
@@ -438,6 +456,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"write(str.split(user, '|')[0])",
+			"partByCategory",
+			"database_divide",
 			"recommendation",
 			"images/",
 			"itemSize",
@@ -460,30 +481,32 @@
 			[
 				{
 					"buffer": 0,
-					"file": "DB/generate_database.py",
+					"file": "main.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2378,
+						"buffer_size": 7081,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1650,
-								1650
+								6822,
+								6822
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 837.0,
+						"translation.y": 2210.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -494,32 +517,30 @@
 			[
 				{
 					"buffer": 1,
-					"file": "random_average.py",
-					"semi_transient": false,
+					"file": "DB/u.user",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3380,
+						"buffer_size": 22627,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2505,
-								2505
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 585.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -527,15 +548,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 386,
+						"buffer_size": 80,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								386,
-								386
+								80,
+								80
 							]
 						],
 						"settings":
@@ -549,7 +570,7 @@
 							"line_numbers": false,
 							"repl": true,
 							"repl_external_id": "python",
-							"repl_id": "0feedaff65ca4e0bacf0a6f6f95d5deb",
+							"repl_id": "33f83ff29fbd4891becfea65729cdc01",
 							"repl_restart_args":
 							{
 								"cmd":
@@ -578,66 +599,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 652,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								652,
-								652
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"auto_indent": false,
-							"detect_indentation": false,
-							"gutter": false,
-							"history_arrows": true,
-							"indent_subsequent_lines": false,
-							"line_numbers": false,
-							"repl": true,
-							"repl_external_id": "python",
-							"repl_id": "c39a91bc6be7485a9d3088d242c9df57",
-							"repl_restart_args":
-							{
-								"cmd":
-								[
-									"python",
-									"-u",
-									"$file_basename"
-								],
-								"cwd": "$file_path",
-								"encoding": "utf8",
-								"extend_env":
-								{
-									"PYTHONIOENCODING": "utf-8"
-								},
-								"external_id": "python",
-								"syntax": "Packages/Python/Python.tmLanguage",
-								"type": "subprocess"
-							},
-							"repl_sublime2": false,
-							"smart_indent": false,
-							"spell_check": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -671,7 +633,7 @@
 		"cols":
 		[
 			0.0,
-			0.218978411407,
+			0.676538908246,
 			1.0
 		],
 		"rows":
@@ -693,7 +655,7 @@
 	"project": "System rekomendacyjny.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -723,7 +685,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

@@ -1,4 +1,5 @@
-def writeToFile(number):
+#procentowy podział bazy danych 
+def database_divide(number):
 	fileTrain = open(str(number) + '_learn','w')
 
 	for index in range(0, number*1000):
@@ -14,7 +15,7 @@ def writeToFile(number):
 
 	fileTest.close() 
 
-
+#generowanie listy wg średniej ocen filmów
 def generateAverageList(movies_number):
     moviesDic = {}
     avgList = []
@@ -38,7 +39,7 @@ def generateAverageList(movies_number):
 
 
 #tworzenie listy po kategoriach
-def generateByCategory():
+def partByCategory():
 	temp = str.split(open("u.item", "r").read(), '\n')
 	moviesCategory = []
 	for i in range(1, 1683):
@@ -80,12 +81,63 @@ def generateByCategory():
 			fileCategory.write(str(movie) + '\n')
 		fileCategory.close()
 
+#generowanie plików z podziałem na płeć
+def partByGender(users):
+	males = []
+	females = []
+	for man in users:
+		temp = str.split(man, '|')
+		if temp[2] == 'M':
+			males.append(man)
+		else:
+			females.append(man)
+
+	fileMale = open('user_male','w')
+	for user in males:
+		fileMale.write(user)
+		fileMale.write('\n')
+	fileMale.close()
+
+	fileFemale = open('user_female','w')
+	for user in females:
+		fileFemale.write(user)
+		fileFemale.write('\n')
+	fileFemale.close()
+
+
+#generowanie plików z podziałem na płeć, wiek i zatrudnienie
+# def partByGenderAgeOccupation(users):
+# 	males = []
+# 	females = []
+# 	print(len(users))
+# 	for man in users:
+# 		temp = str.split(man, '|')
+# 		if temp[2] == 'M':
+# 			males.append(man)
+# 		else:
+# 			females.append(man)
+
+# 	fileMale = open('user_male','w')
+# 	for user in males:
+# 		fileMale.write(str.split(user, '|')[0])
+# 		fileMale.write('\n')
+# 	fileMale.close()
+
+# 	fileFemale = open('user_female','w')
+# 	for user in females:
+# 		fileFemale.write(str.split(user, '|')[0])
+# 		fileFemale.write('\n')
+# 	fileFemale.close()
+
 #Program główny
 data = str.split(open("u.data", "r").read(), '\n')
+users = str.split(open("u.user", "r").read(), '\n')
 
+# database_divide(25)
+# database_divide(50)
+# database_divide(75)
 
-# writeToFile(25)
-# writeToFile(50)
-# writeToFile(75)
 # generateAverageList(500)
-# generateByCategory()
+# partByCategory()
+
+# partByGender(users)
